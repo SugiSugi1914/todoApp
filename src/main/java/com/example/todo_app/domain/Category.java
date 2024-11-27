@@ -1,7 +1,16 @@
 package com.example.todo_app.domain;
 
 public class Category {
+    private Integer id;
     private String category;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getCategory() {
         return category;
@@ -13,7 +22,7 @@ public class Category {
 
     @Override
     public String toString() {
-        return "Category [category=" + category + "]";
+        return "Category [id=" + id + ", category=" + category + "]";
     }
 
 }

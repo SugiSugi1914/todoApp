@@ -1,17 +1,10 @@
-package com.example.todo_app.domain;
+package com.example.todo_app.form;
 
-public class Task {
-    private Integer id;
+public class TaskForm {
+
     private String title;
+
     private Integer categoryId;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getTitle() {
         return title;
@@ -31,7 +24,6 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task [id=" + id + ", title=" + title + ", categoryId=" + categoryId + "]";
+        return "TaskForm [title=" + title + ", categoryId=" + categoryId + "]";
     }
-
 }
