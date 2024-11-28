@@ -3,7 +3,7 @@ package com.example.todo_app.domain;
 public class Task {
     private Integer id;
     private String title;
-    private Integer categoryId;
+    private Category category;
 
     public Integer getId() {
         return id;
@@ -21,17 +21,17 @@ public class Task {
         this.title = title;
     }
 
-    public Integer getCategoryId() {
-        return categoryId;
+    public Category getCategory() {
+        return category;
     }
 
-    public void setCategoryId(Integer categoryId) {
-        this.categoryId = categoryId;
+    public void setCategory(Category category) {
+        this.category = category;
     }
 
     @Override
     public String toString() {
-        return "Task [id=" + id + ", title=" + title + ", categoryId=" + categoryId + "]";
+        return "Task [id=" + id + ", title=" + title + ", category=" + category + "]";
     }
 
 }
