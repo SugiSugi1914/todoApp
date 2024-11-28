@@ -20,10 +20,14 @@ public class TaskService {
     }
 
     public void addTask(Task task) {
-        taskRepository.save(task);
+        taskRepository.insert(task);
     }
 
     public void deleteTask(Integer taskId) {
         taskRepository.delete(taskId);
+    }
+
+    public void update(Task task){
+        taskRepository.update(task);
     }
 }
